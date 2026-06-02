@@ -4,6 +4,10 @@
 
 ---
 
+## 🌐 Live Demo
+
+👉 **Live Application:** https://dataforge-upgoxxngpjptfws5s9feky.streamlit.app/
+
 ## 📌 Problem Statement
 
 Data analysts spend a significant amount of time cleaning and validating datasets before they can begin analysis. Missing values, duplicate records, datatype inconsistencies, and outliers often lead to inaccurate reporting, unreliable dashboards, and poor business decisions.
