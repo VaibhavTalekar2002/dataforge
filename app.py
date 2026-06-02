@@ -1650,11 +1650,12 @@ if uploaded_file is not None and st.button("Analyse & Recommend", type="primary"
 
     try:
         with st.spinner("Contacting analysis engine..."):
-            response = requests.post(
-                "http://127.0.0.1:8000/analyze",
-                json={"dataset_id": dataset_id, "issues": issues}
-            )
-            result = response.json()
+            from recommendation_engine import analyze_issues
+                
+            recommendations = analyze_issues(issues)
+                
+    
+            result = {"recommendations": recommendations, "total_actions": len(recommendations)}
             jobs[job_id]["status"] = "done"
             jobs[job_id]["recommendations"] = result["recommendations"]
         st.success(f"Analysis complete. {result['total_actions']} action(s) recommended.")
