@@ -11,7 +11,7 @@ from store import datasets, jobs, audit_logs
 
 
 st.set_page_config(
-    page_title="DataForge - Smart Cleaning",
+    page_title="DataForge",
     page_icon="DF",
     layout="wide",
     initial_sidebar_state="collapsed"
